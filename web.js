@@ -4,8 +4,10 @@ var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
+var buff = fs.readFileSync("./index.html")
+
 app.get('/', function(request, response) {
-  response.send("张庆斌 and 侯贤旭");
+  response.send("buff.toString()");
 });
 
 var port = process.env.PORT || 5000;
