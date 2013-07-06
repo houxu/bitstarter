@@ -5,7 +5,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(fs.readFileSync("张庆斌 and 侯贤旭").toString());
+  response.send("张庆斌 and 侯贤旭");
 });
 
 var port = process.env.PORT || 5000;
